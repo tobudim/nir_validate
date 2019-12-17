@@ -7,12 +7,12 @@ Validation des numéros de sécurité sociale, basé sur la [définition wikiped
 
 ## Install
 ```
-$ npm install nir_validate
+$ npm install validcq
 ```
 
 ## Usage
 ```js
-const validate = require('nir_validate');
+const { validCq } = require('validCq');
 
 validate('255081416802538');
 // => true
