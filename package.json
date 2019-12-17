@@ -1,0 +1,29 @@
+{
+  "name": "validcq",
+  "version": "1.0.0",
+  "description": "Check validity for french sécurité sociale",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobudim/validCq.git"
+  },
+  "keywords": [
+    "sécurité",
+    "sociale",
+    "check",
+    "validity",
+    "valid",
+    "vérifier",
+    "numéro",
+    "sécu"
+  ],
+  "author": "tobudim (forked from Florian Delezenne work for betagouv)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tobudim/validCq/issues"
+  },
+  "homepage": "https://github.com/tobudim/validCq#readme"
+}
