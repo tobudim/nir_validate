@@ -21,17 +21,15 @@ function handleSpecialCodes(nirpp) {
 
 function parse(nirpp) {
   const { withoutLetters, offset } = handleSpecialCodes(nirpp);
-  return parseInt(withoutLetters) - offset;
+  return parseInt(withoutLetters, 10) - offset;
 }
 
 function generateControlKey(nirpp) {
-  return 97 - parse(nirpp) % 97;
+  return 97 - (parse(nirpp) % 97);
 }
 
 function clean(nirpp) {
-  return nirpp
-    .toUpperCase()
-    .replace(/\s+/g, '');
+  return nirpp.toUpperCase().replace(/\s+/g, '');
 }
 
 function validCq(input, options = {}) {
@@ -40,7 +38,7 @@ function validCq(input, options = {}) {
   const key = cleanedInput.slice(-2);
   const withoutKey = cleanedInput.slice(0, -2);
   const computedKey = generateControlKey(withoutKey);
-  return computedKey == key;
+  return computedKey === key;
 }
 
 module.exports = { validate: validCq };
