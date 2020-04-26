@@ -31,5 +31,11 @@ describe('validate module', () => {
     it('should refuse "2 55 08 14 168 025 38" with { shouldClean: false }', () => {
       expect(validate('2 55 08 14 168 025 38', { shouldClean: false })).to.be.equal(false);
     });
+    it('should refuse empty string ""', () => {
+      expect(validate('')).to.be.equal(false);
+    });
+    it('should refuse "zefuobzef"', () => {
+      expect(validate('zefuobzef')).to.be.equal(false);
+    });
   });
 });
