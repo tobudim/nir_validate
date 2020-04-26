@@ -28,7 +28,7 @@ validate('2 55 08 14 168 025 38');
 
 ### Options
 
-*shouldClean* - set this to `false` to become white-space and case sensitive
+*shouldClean* - set this to `false` to become white-space and case sensitive (default is true)
 
 
 ```js
@@ -37,6 +37,6 @@ validate('2 55 08 14 168 025 38', { shouldClean: false });
 ```
 
 ```js
-validate('2 55 08 14 168 025 38');
+validate('2 55 08 14 168 025 38', { shouldClean: true });
 // => true
 ```
