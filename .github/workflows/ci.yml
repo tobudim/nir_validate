@@ -1,12 +1,12 @@
 name: CI Script
-​
+
 on: [push]
-​
+
 jobs:
   build:
     name: Preparation, Linting & Tests
     runs-on: ubuntu-latest
-​
+
     steps:
     - uses: actions/checkout@v1
     - name: use Node.js v12
