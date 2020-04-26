@@ -12,15 +12,15 @@ $ npm install validcq
 
 ## Usage
 ```js
-const { validCq } = require('validCq');
+const { validate } = require('validCq');
 
-validCq('255081416802538');
+validate('255081416802538');
 // => true
 
-validCq('255081416802539');
+validate('255081416802539');
 // => false
 
-validCq('2 55 08 14 168 025 38');
+validate('2 55 08 14 168 025 38');
 // => true
 ```
 
@@ -30,11 +30,11 @@ validCq('2 55 08 14 168 025 38');
 
 
 ```js
-validCq('2 55 08 14 168 025 38', {shouldClean: false});
+validate('2 55 08 14 168 025 38', {shouldClean: false});
 // => false
 ```
 
 ```js
-validCq('2 55 08 14 168 025 38');
+validate('2 55 08 14 168 025 38');
 // => true
 ```

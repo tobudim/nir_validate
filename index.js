@@ -43,6 +43,4 @@ function validCq(input, options = {}) {
   return computedKey == key;
 }
 
-module.exports = {
-  validCq
-};
+module.exports = { validate: validCq };
