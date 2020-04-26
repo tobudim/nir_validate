@@ -25,5 +25,12 @@
   "bugs": {
     "url": "https://github.com/tobudim/validCq/issues"
   },
-  "homepage": "https://github.com/tobudim/validCq#readme"
+  "homepage": "https://github.com/tobudim/validCq#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "codecov": "^3.6.5",
+    "dirty-chai": "^2.0.1",
+    "mocha": "^7.1.2",
+    "nyc": "^15.0.1"
+  }
 }
