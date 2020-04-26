@@ -14,22 +14,27 @@ $ npm install validcq
 ```js
 const { validCq } = require('validCq');
 
-validate('255081416802538');
+validCq('255081416802538');
 // => true
 
-validate('255081416802539');
+validCq('255081416802539');
 // => false
 
-validate('2 55 08 14 168 025 38');
+validCq('2 55 08 14 168 025 38');
 // => true
 ```
 
 ### Options
 
-* shouldClean - set this to `false` to become white-space and case sensitive
+*shouldClean* - set this to `false` to become white-space and case sensitive
 
 
 ```js
-validate('2 55 08 14 168 025 38', {shoudlClean: false});
+validCq('2 55 08 14 168 025 38', {shouldClean: false});
 // => false
+```
+
+```js
+validCq('2 55 08 14 168 025 38');
+// => true
 ```
