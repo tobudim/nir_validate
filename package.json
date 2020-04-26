@@ -1,6 +1,6 @@
 {
   "name": "validcq",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Check validity for french sécurité sociale",
   "main": "index.js",
   "scripts": {
