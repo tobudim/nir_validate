@@ -35,8 +35,8 @@ function clean(nirpp) {
 }
 
 function validCq(input, options = {}) {
-  const { shoudClean } = options;
-  const cleanedInput = shoudClean === false ? input : clean(input);
+  const { shouldClean } = options;
+  const cleanedInput = shouldClean === false ? input : clean(input);
   const key = cleanedInput.slice(-2);
   const withoutKey = cleanedInput.slice(0, -2);
   const computedKey = generateControlKey(withoutKey);
