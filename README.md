@@ -32,7 +32,7 @@ validate('2 55 08 14 168 025 38');
 
 
 ```js
-validate('2 55 08 14 168 025 38', {shouldClean: false});
+validate('2 55 08 14 168 025 38', { shouldClean: false });
 // => false
 ```
 
